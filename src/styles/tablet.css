@@ -1,13 +1,2 @@
-.layout {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  height: 100vh;
-  background-color: blueviolet;
-  font-size: 24px;
-}
-h1 {
-  font-family: sans-serif;
-  color: aliceblue;
-  font-size: calc(1.5rem * 3);
+@media screen and (min-width: 768px) {
 }
