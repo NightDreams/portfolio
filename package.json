@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development --history-api-fallback",
     "build": "webpack --mode production",
     "format": "prettier --write \"{*.js,src/**/*.{js,jsx}}\"",
-    "lint": "eslint src/ --fix"
+    "lint": "eslint src/ --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
