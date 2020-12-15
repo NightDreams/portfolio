@@ -1,57 +1,168 @@
-*,
-h1,
-h2,
-h3,
-a,
-p,
-small {
-  margin: 0;
-  padding: 0;
-}
-
-.layout {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  height: 100vh;
-  background-color: blueviolet;
-  font-size: 24px;
-}
-h1 {
-  font-family: sans-serif;
-  color: aliceblue;
-  font-size: calc(1.5rem * 1.5);
-}
 
 @media screen and (min-width: 768px) {
-  .layout {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    height: 100vh;
-    background-color: blueviolet;
-    font-size: 24px;
-  }
-  h1 {
-    font-family: sans-serif;
-    color: aliceblue;
-    font-size: calc(1.5rem * 3);
-  }
 }
 
 @media screen and (min-width: 1440px) {
-  .layout {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
     display: grid;
     justify-content: center;
-    align-content: center;
-    height: 100vh;
-    background-color: blueviolet;
-    font-size: 24px;
   }
+  .stats,
+  .proyects,
+  .buttons,
+  .blog,
+  .exp {
+    display: grid;
+  }
+  /* L1 */
+  .layout {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas:
+      'b1 b2 '
+      'stats stats'
+      'proyects proyects'
+      'buttons buttons';
+
+    min-width: 1046px;
+    padding: 3rem;
+    font-size: 24px;
+    border: 1px solid red;
+  }
+  .principal {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .b1 {
+    display: grid;
+    grid-area: b1;
+    grid-gap: 2rem;
+    flex-direction: column;
+  }
+  .b2 {
+    display: grid;
+    grid-area: b2;
+    grid-gap: 2rem;
+    flex-direction: column;
+  }
+
   h1 {
     font-family: sans-serif;
-    color: aliceblue;
-    font-size: calc(1.5rem * 8);
+    font-size: calc(1.5rem * 1.5);
+  }
+  /* L1 */
+  .skills {
+    min-width: 415px;
+    min-height: 303px;
+    width: 415px;
+    height: 303px;
+    padding: 1rem;
+    border: 1px solid red;
+  }
+  .hobbies {
+    border: 1px solid red;
+    min-width: 415px;
+    min-height: 836px;
+    width: 415px;
+    height: 836px;
+  }
+  .blog {
+    border: 1px solid red;
+    min-width: 596px;
+    min-height: 656px;
+    width: 596px;
+    height: 656px;
+  }
+  .exp {
+    border: 1px solid red;
+    min-width: 596px;
+    min-height: 482px;
+    width: 596px;
+    height: 482px;
+  }
+  /* L1  */
+  .stats {
+    grid-area: stats;
+    min-width: 1046px;
+    min-height: 115px;
+    border: 1px solid red;
+  }
+  .proyects {
+    grid-area: proyects;
+    border: 1px solid red;
+    min-width: 1046px;
+    min-height: 568px;
+  }
+  .buttons {
+    grid-area: buttons;
+    min-width: 303px;
+    width: 303px;
+    min-height: 36px;
+    border: 1px solid red;
+  }
+  /* Componentes C */
+  /* c1 skills div */
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .set {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .barlevel {
+    display: flex;
+    justify-content: left;
+
+    width: 234px;
+    height: fit-content;
+    border-radius: 12px;
+
+    font-size: small;
+    background: #c4c4c4;
+  }
+  .progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 22%;
+    /* width: 0; */
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+
+    background: linear-gradient(to left, #f2709c, #ff9472);
+    box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+    border-radius: 12px;
   }
 }
 

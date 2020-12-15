@@ -60,6 +60,7 @@
     min-height: 303px;
     width: 415px;
     height: 303px;
+    padding: 1rem;
     border: 1px solid red;
   }
   .hobbies {
@@ -102,5 +103,61 @@
     width: 303px;
     min-height: 36px;
     border: 1px solid red;
+  }
+  /* Componentes C */
+  /* c1 skills div */
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .set {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .barlevel {
+    display: flex;
+    justify-content: left;
+
+    width: 234px;
+    height: fit-content;
+    border-radius: 12px;
+
+    font-size: small;
+    background: #c4c4c4;
+  }
+  .progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 22%;
+    /* width: 0; */
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+
+    background: linear-gradient(to left, #f2709c, #ff9472);
+    box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+    border-radius: 12px;
   }
 }
