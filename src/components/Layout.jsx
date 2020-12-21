@@ -1,16 +1,13 @@
 import React from 'react';
+import Skill from './Skills';
+import dataSkills from './dataSkills';
 
-const Layou = () => (
+const Layout = () => (
   <div className="layout">
     <div className="b1">
       <div className="skills">
         <h2>front end</h2>
-        <div className="set">
-          <h3>tecnologia</h3>
-          <div className="barlevel">
-            <div className="progress">70</div>
-          </div>
-        </div>
+        <Skill data={dataSkills.item} />
       </div>
       <div className="hobbies">2</div>
     </div>
@@ -24,4 +21,4 @@ const Layou = () => (
   </div>
 );
 
-export default Layou;
+export default Layout;

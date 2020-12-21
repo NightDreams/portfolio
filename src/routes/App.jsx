@@ -4,7 +4,7 @@ import { Router } from '@reach/router';
 import '../styles/mobile.css';
 import '../styles/tablet.css';
 import '../styles/desktop.css';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 const Dash = () => <div>Dash</div>;
 

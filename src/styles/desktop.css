@@ -56,11 +56,17 @@
   }
   /* L1 */
   .skills {
+    display: grid;
+    grid-row-gap: 17px;
     min-width: 415px;
     min-height: 303px;
+    /* Estos actuan como limite
+    retiralos de todos los elemntos 
+    para que se estiren */
     width: 415px;
     height: 303px;
-    padding: 1rem;
+
+    padding: 1.5rem;
     border: 1px solid red;
   }
   .hobbies {
