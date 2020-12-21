@@ -5,10 +5,8 @@ import dataSkills from './dataSkills';
 const Layout = () => (
   <div className="layout">
     <div className="b1">
-      <div className="skills">
-        <h2>front end</h2>
-        <Skill data={dataSkills.item} />
-      </div>
+      {/* PASTE SKILLS HERE */}
+      <Skill data={dataSkills.item} />
       <div className="hobbies">2</div>
     </div>
     <div className="b2">

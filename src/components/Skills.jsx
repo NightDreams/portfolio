@@ -22,9 +22,12 @@ const Item = ({ item }) => {
 
 const Skill = ({ data }) => (
   <>
-    {data.map((e) => (
-      <Item key={e.id} item={e} level={e.level} />
-    ))}
+    <div className="skills">
+      <h2>front end</h2>
+      {data.map((e) => (
+        <Item key={e.id} item={e} level={e.level} />
+      ))}
+    </div>
   </>
 );
 
