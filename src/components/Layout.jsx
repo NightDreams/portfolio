@@ -1,13 +1,15 @@
 import React from 'react';
 import Skill from './Skills';
 import dataSkills from './dataSkills';
+import Hobbies from './Hobbies';
+import Biography from './Biography';
 
 const Layout = () => (
   <div className="layout">
+    <Biography />
     <div className="b1">
-      {/* PASTE SKILLS HERE */}
       <Skill data={dataSkills.item} />
-      <div className="hobbies">2</div>
+      <Hobbies />
     </div>
     <div className="b2">
       <div className="blog">3</div>
