@@ -84,13 +84,7 @@
     width: 415px;
     height: 836px;
   }
-  .blog {
-    border: 1px solid red;
-    min-width: 596px;
-    min-height: 656px;
-    width: 596px;
-    height: 656px;
-  }
+
   .exp {
     border: 1px solid red;
     min-width: 596px;
@@ -225,5 +219,62 @@
     font: 18px/22px Montserrat;
     font-weight: 500;
     color: #828282;
+  }
+  /* Blog component */
+  .blog {
+    display: grid;
+    padding: var(--padding-2x);
+    align-content: space-between;
+    border: 1px solid red;
+    min-width: 596px;
+    min-height: 656px;
+
+    width: 596px;
+    height: 656px;
+  }
+
+  .post {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  .blog span {
+    font: 16px/20px Montserrat;
+    font-weight: 500;
+    color: #e0e0e0;
+  }
+
+  .blog h2 {
+    font: 24px/29px Montserrat;
+    font-weight: 500;
+    color: #333333;
+  }
+
+  .b-d h2 {
+    text-transform: capitalize;
+  }
+
+  .b-i {
+    min-width: 396px;
+    min-height: 321px;
+
+    border: 1px solid;
+    border-radius: 12px;
+  }
+
+  .blog p {
+    font: 16px/20px Montserrat;
+    font-weight: 500;
+    color: #828282;
+  }
+  .blog small {
+    color: #5c94e1;
+    font: 16px/20px Montserrat;
+    font-weight: 500;
+  }
+
+  :root {
+    --padding-1x: 1rem;
+    --padding-2x: 2rem;
   }
 }

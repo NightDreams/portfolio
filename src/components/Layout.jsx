@@ -1,8 +1,16 @@
 import React from 'react';
-import Skill from './Skills';
 import dataSkills from './dataSkills';
-import Hobbies from './Hobbies';
+// CV
 import Biography from './Biography';
+// seccion main
+import Skill from './Skills';
+import Hobbies from './Hobbies';
+import Blog from './Blog';
+import Exp from './Exp';
+// seccion inferior
+import Stats from './Stats';
+import Proyects from './Proyects';
+import Buttons from './Buttons';
 
 const Layout = () => (
   <div className="layout">
@@ -12,12 +20,12 @@ const Layout = () => (
       <Hobbies />
     </div>
     <div className="b2">
-      <div className="blog">3</div>
-      <div className="exp">5</div>
+      <Blog />
+      <Exp />
     </div>
-    <div className="stats" />
-    <div className="proyects" />
-    <div className="buttons" />
+    <Stats />
+    <Proyects />
+    <Buttons />
   </div>
 );
 

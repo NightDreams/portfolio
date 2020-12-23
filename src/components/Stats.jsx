@@ -1,5 +1,5 @@
 import React from 'react';
 
-const stats = () => <div />;
+const Stats = () => <div className="stats" />;
 
-export default stats;
+export default Stats;
