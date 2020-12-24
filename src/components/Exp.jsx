@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Proyect = () => (
+const Startup = () => (
   <div className="e-p">
     <picture>
       <img src="" alt="logo1" />
@@ -19,8 +19,8 @@ const Proyect = () => (
 const Exp = () => (
   <div className="exp">
     <h2>Experiencias </h2>
-    <Proyect />
-    <Proyect />
+    <Startup />
+    <Startup />
   </div>
 );
 

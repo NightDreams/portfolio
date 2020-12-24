@@ -10,7 +10,7 @@
     background-color: #f2f2f2;
   }
   .stats,
-  .proyects,
+  .proyect,
   .buttons,
   .blog,
   .exp,
@@ -85,13 +85,7 @@
   }
 
   /* L1  */
-  .proyects {
-    grid-area: proyects;
-    border: 1px solid red;
-    min-width: 1046px;
-    min-height: 568px;
-    background-color: #ffff;
-  }
+
   .buttons {
     grid-area: buttons;
     justify-self: end;
@@ -101,6 +95,7 @@
     border: 1px solid red;
     background-color: #ffff;
   }
+
   /* Componentes C */
   /* c1 skills div */
   h2 {
@@ -401,5 +396,78 @@
     color: #ffffff;
     background: #6aa2ef;
     border: unset;
+  }
+  .proyect {
+    grid-area: proyects;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    grid-gap: 30px;
+
+    min-width: 1046px;
+    min-height: 568px;
+
+    background-color: #ffff;
+    border: 1px solid red;
+  }
+  .cards {
+    display: grid;
+    grid-gap: 1rem;
+    align-content: start;
+    padding: 18px;
+    height: 568px;
+    width: 328px;
+    border: 1px solid;
+    border-radius: 12px;
+  }
+  div.cards {
+    align-content: space-between;
+  }
+
+  .proyect picture {
+    width: 292px;
+    height: 217px;
+    border: 1px solid;
+    border-radius: 12px;
+  }
+  .proyect span {
+    display: flex;
+    grid-gap: 10px;
+  }
+  small {
+    font: 500 16px/20px Montserrat;
+    text-transform: capitalize;
+    color: #4f4f4f;
+  }
+  .proyect h2 {
+    font: 500 24px/29px Montserrat;
+    color: #333;
+    text-transform: capitalize;
+  }
+  .proyect p {
+    font: 500 16px/20px Montserrat;
+    color: #828282;
+  }
+  .c-b {
+    display: flex;
+    grid-gap: 10px;
+  }
+  .c-b p {
+    justify-content: center;
+    align-items: center;
+    display: inherit;
+    margin: unset;
+
+    width: 135px;
+    height: 46px;
+    border-radius: 12px;
+    font: 600 18px/22px Montserrat;
+  }
+  .c-b .fill {
+    color: #fff;
+    background-color: #5c94e1;
+  }
+  .c-b .outline {
+    border: 3px solid;
+    color: #5c94e1;
   }
 }
