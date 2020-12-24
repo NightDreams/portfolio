@@ -11,13 +11,17 @@
   body {
     display: grid;
     justify-content: center;
+    background-color: #f2f2f2;
   }
   .stats,
-  .proyects,
+  .proyect,
   .buttons,
   .blog,
-  .exp {
+  .exp,
+  .hobbies,
+  .skills {
     display: grid;
+    border-radius: 12px;
   }
   /* L1 */
   .layout {
@@ -40,6 +44,7 @@
     max-width: 1046px;
     min-height: 311px;
     border: 1px solid red;
+    background-color: #ffff;
   }
 
   .principal {
@@ -77,52 +82,14 @@
     para que se estiren */
     width: 415px;
     height: 303px;
+    background-color: #ffff;
 
     padding: 1.5rem;
     border: 1px solid red;
   }
-  .hobbies {
-    border: 1px solid red;
-    min-width: 415px;
-    min-height: 836px;
-    width: 415px;
-    height: 836px;
-  }
-  .blog {
-    border: 1px solid red;
-    min-width: 596px;
-    min-height: 656px;
-    width: 596px;
-    height: 656px;
-  }
-  .exp {
-    border: 1px solid red;
-    min-width: 596px;
-    min-height: 482px;
-    width: 596px;
-    height: 482px;
-  }
+
   /* L1  */
-  .stats {
-    grid-area: stats;
-    min-width: 1046px;
-    min-height: 115px;
-    border: 1px solid red;
-  }
-  .proyects {
-    grid-area: proyects;
-    border: 1px solid red;
-    min-width: 1046px;
-    min-height: 568px;
-  }
-  .buttons {
-    grid-area: buttons;
-    justify-self: end;
-    min-width: 303px;
-    width: 303px;
-    min-height: 36px;
-    border: 1px solid red;
-  }
+
   /* Componentes C */
   /* c1 skills div */
   h2 {
@@ -193,6 +160,7 @@
     min-width: 271px;
     min-height: 266px;
     border: 1px solid red;
+    border-radius: 12px;
   }
 
   .b-l {
@@ -228,6 +196,297 @@
     font: 18px/22px Montserrat;
     font-weight: 500;
     color: #828282;
+  }
+  /* Blog component */
+  .blog {
+    display: grid;
+    padding: var(--padding-2x);
+    align-content: space-between;
+
+    min-width: 596px;
+    min-height: 656px;
+
+    width: 596px;
+    height: 656px;
+    background-color: #ffff;
+    border: 1px solid red;
+  }
+
+  .post {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  .blog span {
+    font: 16px/20px Montserrat;
+    font-weight: 500;
+    color: #e0e0e0;
+  }
+
+  .blog h2 {
+    font: 24px/29px Montserrat;
+    font-weight: 500;
+    color: #333333;
+  }
+
+  .b-d h2 {
+    text-transform: capitalize;
+  }
+
+  .b-i {
+    min-width: 396px;
+    min-height: 321px;
+
+    border: 1px solid;
+    border-radius: 12px;
+  }
+
+  .blog p {
+    font: 16px/20px Montserrat;
+    font-weight: 500;
+    color: #828282;
+  }
+  .blog small {
+    color: #5c94e1;
+    font: 16px/20px Montserrat;
+    font-weight: 500;
+  }
+  .hobbies {
+    display: grid;
+    grid-gap: 26px 0;
+
+    align-content: start;
+    justify-content: center;
+    padding-top: 22px;
+    background-color: #ffff;
+
+    min-width: 415px;
+    min-height: 836px;
+    width: 415px;
+    height: 836px;
+    border: 1px solid red;
+  }
+
+  .h-l {
+    display: grid;
+    grid-gap: 36px 0;
+
+    border: 1px solid;
+  }
+
+  .hobbies h2 {
+    font: 500 24px/29px Montserrat;
+
+    color: #4f4f4f;
+  }
+  .h-e {
+    display: grid;
+  }
+
+  .h-e h3 {
+    font: 600 18px/22px Montserrat;
+    color: #333333;
+    padding-top: 1.5rem;
+    padding-bottom: 0.8rem;
+  }
+  .h-e p {
+    font: 500 16px/20px Montserrat;
+    color: #828282;
+  }
+
+  .h-e picture {
+    width: 380px;
+    height: 140px;
+    border-radius: 12px;
+
+    border: 1px solid;
+  }
+
+  :root {
+    --padding-1x: 1rem;
+    --padding-2x: 2rem;
+  }
+  .exp {
+    grid-gap: 2rem;
+    border: 1px solid red;
+    padding: 17px;
+    align-content: start;
+
+    min-width: 596px;
+    min-height: 482px;
+
+    width: 596px;
+    height: 482px;
+
+    background-color: #ffff;
+  }
+  .exp h2 {
+    font: 500 24px/29px Montserrat;
+    color: #4f4f4f;
+  }
+  .e-p {
+    justify-content: space-between;
+    grid-auto-flow: column;
+    grid-gap: 22px;
+
+    height: 160px;
+    display: grid;
+  }
+  .e-p div {
+    width: 387.57px;
+    border: 1px solid;
+  }
+  .e-p picture {
+    width: 120px;
+    height: 85px;
+    border: 1px solid;
+  }
+
+  .e-p small {
+    font: 500 14px/17px Montserrat;
+    color: #828282;
+  }
+  .e-p h3 {
+    font: 600 16px/20px Montserrat;
+    color: #333333;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .e-p p {
+    font: 500 16px/17px Montserrat;
+    color: #828282;
+    color: #828282;
+  }
+  .stats {
+    grid-area: stats;
+    padding: 22px;
+    grid-gap: 1rem;
+
+    min-width: 1046px;
+    min-height: 115px;
+
+    border: 1px solid red;
+    background-color: #ffff;
+  }
+  .stats h2 {
+    font: 500 18px/22px Montserrat;
+    color: #4f4f4f;
+  }
+  .stats p {
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+  .stats span {
+    padding: 8px 12px;
+
+    font: 600 14px/17px Montserrat;
+    text-transform: capitalize;
+    color: #4f4f4f;
+    border: 1px solid #4f4f4f;
+    border-radius: 12px;
+  }
+  .stats .blue {
+    color: #ffffff;
+    background: #6aa2ef;
+    border: unset;
+  }
+  .proyect {
+    grid-area: proyects;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    grid-gap: 30px;
+
+    min-width: 1046px;
+    min-height: 568px;
+
+    background-color: #ffff;
+    border: 1px solid red;
+  }
+  .cards {
+    display: grid;
+    grid-gap: 1rem;
+    align-content: start;
+    padding: 18px;
+    height: 568px;
+    width: 328px;
+    border: 1px solid;
+    border-radius: 12px;
+  }
+  div.cards {
+    align-content: space-between;
+  }
+
+  .proyect picture {
+    width: 292px;
+    height: 217px;
+    border: 1px solid;
+    border-radius: 12px;
+  }
+  .proyect span {
+    display: flex;
+    grid-gap: 10px;
+  }
+  small {
+    font: 500 16px/20px Montserrat;
+    text-transform: capitalize;
+    color: #4f4f4f;
+  }
+  .proyect h2 {
+    font: 500 24px/29px Montserrat;
+    color: #333;
+    text-transform: capitalize;
+  }
+  .proyect p {
+    font: 500 16px/20px Montserrat;
+    color: #828282;
+  }
+  .c-b {
+    display: flex;
+    grid-gap: 10px;
+  }
+  .c-b p {
+    justify-content: center;
+    align-items: center;
+    display: inherit;
+    margin: unset;
+
+    width: 135px;
+    height: 46px;
+    border-radius: 12px;
+    font: 600 18px/22px Montserrat;
+  }
+  .c-b .fill {
+    color: #fff;
+    background-color: #5c94e1;
+  }
+  .c-b .outline {
+    border: 3px solid;
+    color: #5c94e1;
+  }
+  .buttons {
+    grid-area: buttons;
+    grid-auto-flow: column;
+    grid-gap: 12px;
+
+    justify-self: end;
+    min-width: 303px;
+    min-height: 36px;
+    border: 1px solid red;
+    background-color: #ffff;
+  }
+  .buttons button {
+    width: 36px;
+    height: 36px;
+    font: 500 18px/17px Montserrat;
+    border: 1px solid;
+    border-radius: 4px;
+    color: #4f4f4f;
+  }
+  .buttons .blue {
+    border: unset;
+    color: #fff;
+    background-color: #6aa2ef;
   }
 }
 
