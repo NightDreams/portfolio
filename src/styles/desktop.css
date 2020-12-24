@@ -86,16 +86,6 @@
 
   /* L1  */
 
-  .buttons {
-    grid-area: buttons;
-    justify-self: end;
-    min-width: 303px;
-    width: 303px;
-    min-height: 36px;
-    border: 1px solid red;
-    background-color: #ffff;
-  }
-
   /* Componentes C */
   /* c1 skills div */
   h2 {
@@ -469,5 +459,29 @@
   .c-b .outline {
     border: 3px solid;
     color: #5c94e1;
+  }
+  .buttons {
+    grid-area: buttons;
+    grid-auto-flow: column;
+    grid-gap: 12px;
+
+    justify-self: end;
+    min-width: 303px;
+    min-height: 36px;
+    border: 1px solid red;
+    background-color: #ffff;
+  }
+  .buttons button {
+    width: 36px;
+    height: 36px;
+    font: 500 18px/17px Montserrat;
+    border: 1px solid;
+    border-radius: 4px;
+    color: #4f4f4f;
+  }
+  .buttons .blue {
+    border: unset;
+    color: #fff;
+    background-color: #6aa2ef;
   }
 }
