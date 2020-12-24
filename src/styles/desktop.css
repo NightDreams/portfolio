@@ -85,13 +85,6 @@
   }
 
   /* L1  */
-  .stats {
-    grid-area: stats;
-    min-width: 1046px;
-    min-height: 115px;
-    border: 1px solid red;
-    background-color: #ffff;
-  }
   .proyects {
     grid-area: proyects;
     border: 1px solid red;
@@ -374,5 +367,39 @@
     font: 500 16px/17px Montserrat;
     color: #828282;
     color: #828282;
+  }
+  .stats {
+    grid-area: stats;
+    padding: 22px;
+    grid-gap: 1rem;
+
+    min-width: 1046px;
+    min-height: 115px;
+
+    border: 1px solid red;
+    background-color: #ffff;
+  }
+  .stats h2 {
+    font: 500 18px/22px Montserrat;
+    color: #4f4f4f;
+  }
+  .stats p {
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+  .stats span {
+    padding: 8px 12px;
+
+    font: 600 14px/17px Montserrat;
+    text-transform: capitalize;
+    color: #4f4f4f;
+    border: 1px solid #4f4f4f;
+    border-radius: 12px;
+  }
+  .stats .blue {
+    color: #ffffff;
+    background: #6aa2ef;
+    border: unset;
   }
 }
