@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdPhone, MdEmail } from 'react-icons/md';
 
 const Biography = () => (
   <div className="Biography">
@@ -10,8 +11,14 @@ const Biography = () => (
           <h3>Front-end developer</h3>
         </div>
         <div className="contact">
-          <p>billy@example.com</p>
-          <p>(+603) 546 624 342</p>
+          <p>
+            <MdEmail />
+            billy@example.com
+          </p>
+          <p>
+            <MdPhone />
+            (+603) 546 624 342
+          </p>
         </div>
       </div>
       <p>
