@@ -46,6 +46,16 @@
     border: 1px solid red;
     background-color: #ffff;
   }
+  .Bio {
+    width: 271px;
+    height: 266px;
+    overflow: clip;
+  }
+  .Bio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   .principal {
     display: grid;
@@ -181,7 +191,7 @@
     font-weight: 500;
     color: #828282;
   }
-  .contact > p:nth-child(1) {
+  /* .contact > p :nth-child(1) {
     font: 18px/22px Montserrat;
     font-weight: 500;
     color: #828282;
@@ -190,7 +200,20 @@
     font: 18px/22px Montserrat;
     font-weight: 500;
     color: #828282;
+  } */
+  .group {
+    display: flex;
+    grid-gap: 18px;
   }
+  .group {
+    color: #4f4f4f;
+  }
+  .group > p {
+    font: 18px/22px Montserrat;
+    font-weight: 500;
+    color: #4f4f4f;
+  }
+
   .b-l > p:nth-child(2) {
     margin-top: 3rem;
     font: 18px/22px Montserrat;
@@ -234,11 +257,18 @@
   }
 
   .b-i {
-    min-width: 396px;
-    min-height: 321px;
-
+    width: 396px;
+    height: 321px;
+    /* min-width: 396px;
+    min-height: 321px; */
+    overflow: clip;
     border: 1px solid;
     border-radius: 12px;
+  }
+  .b-i img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .blog p {
@@ -298,8 +328,14 @@
     width: 380px;
     height: 140px;
     border-radius: 12px;
+    overflow: clip;
 
     border: 1px solid;
+  }
+  .h-e img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   :root {
@@ -319,6 +355,10 @@
     height: 482px;
 
     background-color: #ffff;
+  }
+  .e-p img {
+    width: 119.25px;
+    height: 84px;
   }
   .exp h2 {
     font: 500 24px/29px Montserrat;
@@ -413,13 +453,17 @@
     border: 1px solid;
     border-radius: 12px;
   }
-  div.cards {
-    align-content: space-between;
+  .cards img {
+    width: 101%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
   }
 
   .proyect picture {
     width: 292px;
     height: 217px;
+    overflow: clip;
     border: 1px solid;
     border-radius: 12px;
   }

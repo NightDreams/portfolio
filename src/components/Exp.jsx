@@ -1,9 +1,11 @@
 import React from 'react';
+import Adidas from '../assets/Adidas-01.svg';
+import Hm from '../assets/H-&-M-01.svg';
 
-const Startup = () => (
+const Startup = ({ props }) => (
   <div className="e-p">
     <picture>
-      <img src="" alt="logo1" />
+      <img className={props} src={props} alt="logo1" />
     </picture>
     <div className="e-d">
       <small>Feb 2017 - Current</small>
@@ -19,8 +21,8 @@ const Startup = () => (
 const Exp = () => (
   <div className="exp">
     <h2>Experiencias </h2>
-    <Startup />
-    <Startup />
+    <Startup props={Hm} />
+    <Startup props={Adidas} />
   </div>
 );
 
