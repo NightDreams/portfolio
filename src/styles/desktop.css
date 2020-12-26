@@ -45,7 +45,7 @@
   .Bio {
     width: 271px;
     height: 266px;
-    overflow: clip;
+    overflow: hidden;
   }
   .Bio img {
     width: 100%;
@@ -257,7 +257,7 @@
     height: 321px;
     /* min-width: 396px;
     min-height: 321px; */
-    overflow: clip;
+    overflow: hidden;
     border: 1px solid;
     border-radius: 12px;
   }
@@ -324,7 +324,7 @@
     width: 380px;
     height: 140px;
     border-radius: 12px;
-    overflow: clip;
+    overflow: hidden;
 
     border: 1px solid;
   }
@@ -459,7 +459,7 @@
   .proyect picture {
     width: 292px;
     height: 217px;
-    overflow: clip;
+    overflow: hidden;
     border: 1px solid;
     border-radius: 12px;
   }
