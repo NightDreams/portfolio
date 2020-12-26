@@ -1,4 +1,5 @@
 import React from 'react';
+import Block from '../assets/block.webp';
 
 const Blog = () => (
   <div className="blog">
@@ -8,7 +9,7 @@ const Blog = () => (
         <h2>How to organize your CSS</h2>
       </div>
       <picture className="b-i">
-        <img src="" alt="device" />
+        <img src={Block} alt="device" />
       </picture>
     </div>
 

@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Proyect = () => (
+import Galery from '../assets/galery.jpg';
+import CockApp from '../assets/cookapp.jpg';
+import Checkout from '../assets/chek2.jpg';
+
+const Proyect = ({ props }) => (
   <div className="cards">
     <picture>
-      <img src="" alt="img-proyect" />
+      <img src={props} alt="img-proyect" />
     </picture>
     <span>
       <small>@html</small>
@@ -24,9 +28,9 @@ const Proyect = () => (
 
 const Proyects = () => (
   <div className="proyect">
-    <Proyect />
-    <Proyect />
-    <Proyect />
+    <Proyect props={CockApp} />
+    <Proyect props={Galery} />
+    <Proyect props={Checkout} />
   </div>
 );
 
