@@ -33,13 +33,13 @@
     min-width: 1046px;
     padding: 3rem;
     font-size: 24px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .Biography {
     grid-area: Bio;
     max-width: 1046px;
     min-height: 311px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #ffff;
   }
   .Bio {
@@ -93,7 +93,7 @@
     background-color: #ffff;
 
     padding: 1.5rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   /* L1  */
@@ -162,12 +162,12 @@
     padding: 1.5rem;
     height: 311px;
     border-radius: 12px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .Biography img {
     min-width: 271px;
     min-height: 266px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 12px;
   }
 
@@ -230,7 +230,7 @@
     width: 596px;
     height: 656px;
     background-color: #ffff;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .post {
@@ -260,7 +260,7 @@
     /* min-width: 396px;
     min-height: 321px; */
     overflow: hidden;
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 12px;
   }
   .b-i img {
@@ -292,14 +292,14 @@
     min-height: 836px;
     width: 415px;
     height: 836px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .h-l {
     display: grid;
     grid-gap: 36px 0;
 
-    border: 1px solid;
+    /* border: 1px solid; */
   }
 
   .hobbies h2 {
@@ -328,7 +328,7 @@
     border-radius: 12px;
     overflow: hidden;
 
-    border: 1px solid;
+    /* border: 1px solid; */
   }
   .h-e img {
     width: 100%;
@@ -342,7 +342,7 @@
   }
   .exp {
     grid-gap: 2rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 17px;
     align-content: start;
 
@@ -372,12 +372,12 @@
   }
   .e-p div {
     width: 387.57px;
-    border: 1px solid;
+    /* border: 1px solid; */
   }
   .e-p picture {
     width: 120px;
     height: 85px;
-    border: 1px solid;
+    /* border: 1px solid; */
   }
 
   .e-p small {
@@ -403,7 +403,7 @@
     min-width: 1046px;
     min-height: 115px;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #ffff;
   }
   .stats h2 {
@@ -421,7 +421,7 @@
     font: 600 14px/17px Montserrat;
     text-transform: capitalize;
     color: #4f4f4f;
-    border: 1px solid #4f4f4f;
+    /* border: 1px solid #4f4f4f; */
     border-radius: 12px;
   }
   .stats .blue {
@@ -439,7 +439,7 @@
     min-height: 568px;
 
     background-color: #ffff;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .cards {
     display: grid;
@@ -448,7 +448,7 @@
     padding: 18px;
     height: 568px;
     width: 328px;
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 12px;
   }
   .cards img {
@@ -462,7 +462,7 @@
     width: 292px;
     height: 217px;
     overflow: hidden;
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 12px;
   }
   .proyect span {
@@ -514,14 +514,14 @@
     justify-self: end;
     min-width: 303px;
     min-height: 36px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #ffff;
   }
   .buttons button {
     width: 36px;
     height: 36px;
     font: 500 18px/17px Montserrat;
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 4px;
     color: #4f4f4f;
   }
