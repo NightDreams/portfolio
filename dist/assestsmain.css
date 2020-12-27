@@ -441,8 +441,6 @@
 
     min-width: 1046px;
     min-height: 568px;
-
-    background-color: #ffff;
     /* border: 1px solid red; */
   }
   .cards {
@@ -454,6 +452,7 @@
     width: 328px;
     /* border: 1px solid; */
     border-radius: 12px;
+    background-color: #ffff;
   }
   .cards img {
     width: 101%;
@@ -519,7 +518,6 @@
     min-width: 303px;
     min-height: 36px;
     /* border: 1px solid red; */
-    background-color: #ffff;
   }
   .buttons button {
     width: 36px;
