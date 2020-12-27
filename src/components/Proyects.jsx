@@ -12,8 +12,12 @@ const pDes = {
   Check:
     'In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io',
 };
+const txt = {
+  demo: 'demo',
+  code: 'code',
+};
 
-const Proyect = ({ props, t, d }) => (
+const Proyect = ({ props, t, d, v }) => (
   <div className="cards">
     <picture>
       <img src={props} alt="img-proyect" />
@@ -26,17 +30,17 @@ const Proyect = ({ props, t, d }) => (
     <h2>{t}</h2>
     <p>{d}</p>
     <div className="c-b">
-      <p className="fill">2</p>
-      <p className="outline">2</p>
+      <p className="fill">{v.demo}</p>
+      <p className="outline">{v.code}</p>
     </div>
   </div>
 );
 
 const Proyects = () => (
   <div className="proyect">
-    <Proyect props={CockApp} t="Recipe Blog" d={pDes.Recipe} />
-    <Proyect props={Galery} t="My Gallery" d={pDes.Gallery} />
-    <Proyect props={Checkout} t="Checkout" d={pDes.Check} />
+    <Proyect props={CockApp} t="Recipe Blog" d={pDes.Recipe} v={txt} />
+    <Proyect props={Galery} t="My Gallery" d={pDes.Gallery} v={txt} />
+    <Proyect props={Checkout} t="Checkout" d={pDes.Check} v={txt} />
   </div>
 );
 
